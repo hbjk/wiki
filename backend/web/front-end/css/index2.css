@@ -1,0 +1,133 @@
+/*------公共样式-------*/
+.pd-lr-45{
+    padding: 0 .4rem;
+}
+.l{
+    float: left;
+}
+.r{
+    float: right;
+}
+.clearfix:after{ 
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix{ /*兼容 IE*/
+    zoom: 1;
+}
+/*------公共样式结束-------*/
+.g-index-logo{
+    text-align: right;
+    padding: .25rem 0;
+}
+.g-index-logo .dicon-logo{
+    font-size: .96rem;
+    color: #E45050;
+}
+.type-title{
+    font-size: .66rem;
+    text-align: left;
+}
+.grids-icon .iconfont-d{
+    font-size: .8rem;
+    color: #ea6f5a;
+}
+.grids-txt{
+    font-size: .32rem;
+    color: #2f2f2f;
+}
+.tabbar-item.tabbar-active{
+    color: #E45050;
+}
+.g-view-index .grids-icon{
+    height: 100%;
+}
+.m-notify{
+    background-color: rgba(0,0,0,.5);
+}
+.m-b-bottom{
+    border-bottom: 1px solid #D5D5D5;
+}
+.coverimg-box{
+    background-size: cover;
+    background-position: 50%;
+    min-height: 4rem;
+    color: #f2f2f2;
+    border-radius: .22rem;
+}
+.c-items-hd{
+    padding: .26rem 0;
+}
+.c-items .m-cell{
+    margin-bottom: 0;
+}
+.c-items-hd .items-title{
+    font-size: .45rem;
+}
+.c-items-hd .c-items-more{
+    padding-right: 0;
+    color: #E45050;
+    font-size: .3rem;
+}
+.c-items .c-items-des{
+    color: #777;
+    font-size: .3rem;
+    padding: 0 0 .28rem 0;
+}
+.c-items .c-items-cover{
+    padding: 0 0 .35rem 0;
+}
+.c-items .c-items-hd:after{
+    border-bottom: none;
+}
+.shaolin-cover{
+    background-position: 50%;
+    min-height: 1.4rem;
+    color: #f2f2f2;
+    border-radius: .1rem;
+    background-repeat: no-repeat;
+}
+.list-item .list-item-cover{
+    width: 20%;
+}
+.list-item .list-item-content{
+    width: 75%;
+}
+.list-item .list-item-content .list-item-title .title{
+    font-size: .28rem;
+    width: 40%;
+}
+.list-item .list-item-content .list-item-title .detail{
+    font-size: .26rem;
+    color: #E45050;
+}
+.list-item .list-item-content .list-item-title .time{
+    font-size: .24rem;
+    color: #999;
+    position: relative;
+    top: 2px;
+}
+.list-item .list-item-content .list-item-desc{
+    font-size: .24rem;
+    color: #777;
+    position: relative;
+    top: 2px;
+    height: 1rem;
+    line-height: .46rem;
+    overflow: hidden;
+    line-height: .46rem;
+}
+.c-items .list-item{
+    padding-bottom: .3rem;
+}
+.hb-tags{
+    color: #999;
+    padding: .2rem 0 0 0;
+}
+
+
+
+

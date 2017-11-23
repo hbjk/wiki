@@ -1,0 +1,64 @@
+.tab-nav-item {
+    color: #8b8b8b;
+}
+
+.tab-nav:after {
+    border-bottom: 2px solid #e2e2e2;
+    width: 100%;
+}
+
+.tab-nav-item:not(:last-child):after {
+    border-right: 0;
+}
+
+.tab-nav-item.tab-active:before {
+    background-color: #dc474b;
+}
+
+.tab-nav-item {
+    line-height: 1.18rem;
+}
+
+.tab-panel .tab-panel-item {
+    padding: .6rem 0 0 0;
+}
+.content {
+    margin: 0 auto;
+    width: 91%;
+}
+.tab-panel-item .content img {
+    border-radius:15px;
+}
+.health-title {
+    font-size: .36rem;
+    color: #000;
+    text-align: left;
+    padding: .32rem 0 .25rem 0;
+}
+.health-time {
+    font-size: .25rem;
+    color: #a6a6a6;
+    padding-bottom: .22rem;
+}
+.ga-content {
+    font-size: .3rem;
+    line-height: .55rem;
+    color: #646464;
+    margin-bottom: 1.07rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.img-p {
+    position: relative;
+}
+.sort-name {
+    position: absolute;
+    right: .2rem;
+    bottom: .2rem;
+    padding: .05rem .1rem;
+    background-color: #fff;
+    color: #505050;
+    border-radius:5px;
+}

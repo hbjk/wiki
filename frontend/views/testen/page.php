@@ -24,25 +24,10 @@ $this->registerCss($this_css);
 
 //js
 $this_js = <<<JS
-
 Echo.init({
     offset: 0,
     throttle: 0
 });
-
-!function (win, $) {
-    //back page
-    var u = navigator.userAgent;
-    $('.back-page').click(function(){
-        if(!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) && /(Safari)/i.test(u)){
-            javascript:window.location=document.referrer;
-        }
-        else
-        {
-            window.history.go(-1);
-        }
-    });
-}(window, jQuery);
 JS;
 $this->registerJs($this_js);
 

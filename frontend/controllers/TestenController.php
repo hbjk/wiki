@@ -166,6 +166,8 @@ class TestenController extends Controller
     //24 solar terms
     public function actionSolar()
     {
+        $this->layout = "nav-main";
+
         return $this->render('solar');
     }
 }

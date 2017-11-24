@@ -31,14 +31,18 @@ $this->registerJs("
 <div class="c-items pd-lr-45">
     <div class="m-cell">
         <div class="cell-item c-items-hd">
-            <div class="cell-left items-title">节气养生</div>
+            <a href="<?php echo Url::to(['testen/solar']);?>">
+                <div class="cell-left items-title">节气养生</div>
+            </a>
             <!-- <div class="cell-right c-items-more">了解更多</div> -->
         </div>
         <div class="c-items-des">
             廿四节气专属养生    十二时辰对应经络
         </div>
         <div class="c-items-cover">
-            <div class="coverimg-box" style="background-image: url('//lo.localhb.com/images/24-banner.png');"></div>
+            <a href="<?php echo Url::to(['testen/solar']);?>">
+                <div class="coverimg-box" style="background-image: url('//wiki.huaben-health.com/images/24-banner.png');"></div>
+            </a>
         </div>
     </div>
 </div>
@@ -53,7 +57,7 @@ $this->registerJs("
         <?php foreach ($allcrticle as $article): ?>
         <div class="list-item clearfix">
             <div class="list-item-cover l">
-                <div class="shaolin-cover" style="background-image: url('http://hbpublic.yandumall.com/data/2017/1022/kK4SUuJqQJj1vXm1XkEnoc7D_FcSHLqk.jpg?imageView2/1/w/70/h/70');"></div>
+                <div class="shaolin-cover" style="background-image: url(<?='//hbpublic.yandumall.com/'.$article->cover.'?imageView2/1/w/70/h/70';?>);"></div>
             </div>
             <div class="list-item-content r">
                 <div class="list-item-title clearfix">

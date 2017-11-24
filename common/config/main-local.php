@@ -3,9 +3,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=127.0.0.1;dbname=hbshow',
+            'dsn' => 'mysql:host=192.168.1.198;dbname=hbshow',
             'username' => 'root',
-            'password' => 'root',
+            'password' => '123456',
             'charset' => 'utf8',
             'tablePrefix' => 'be_',   //加入前缀名称be_
         ],

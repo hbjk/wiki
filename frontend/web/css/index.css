@@ -208,3 +208,10 @@ td {
 .ue-table-interlace-color-single {
     background-color: #fcfcfc;
 }
+.m-navbar .ui-link {
+    width: 25%;
+    float: left;
+}
+.sort-hid {
+    opacity: 0;
+}

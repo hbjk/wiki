@@ -13,6 +13,25 @@ $this_js = <<<JS
     //choose
     FastClick.attach(document.body);
     var dialog = win.YDUI.dialog;
+
+    //margin top
+    $('.g-scrollview').css('marginTop',$('header').height());
+
+    //back page
+    var u = navigator.userAgent;
+    $('.back-page').click(function(){
+        if(!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) && /(Safari)/i.test(u)){
+            javascript:window.location=document.referrer;
+        }
+        else
+        {
+            window.history.go(-1);
+        }
+    });
+    
+    //Preload animation over
+    $('.single2').addClass('single2-none');
+    var t=setTimeout("$('.single2').remove()",1000);
 }(window, jQuery);
 JS;
 $this->registerJs($this_js);
@@ -33,21 +52,46 @@ $this->registerJs($this_js);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<section class="g-flexview" id="g-index">
-    <header class="m-navbar">
-        <a href="javascript:;" class="navbar-item back-page"><i class="back-ico"></i></a>
-        <div class="navbar-center">
-                <span class="navbar-title">
-                    <svg class="icon nav-logo" aria-hidden="true">
-                        <use xlink:href="#dicon-logo">
-                    </svg>
-                </span>
-        </div>
-    </header>
-    <div class="g-scrollview">
-        <?=$content?>
+<div class="single2">
+    <div class="mg-div">
     </div>
-</section>
+    <div class="spinner">
+        <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+    </div>
+</div>
+<section class="g-flexview" id="g-index">
+        <header class="m-navbar navbar-fixed">
+            <a href="javascript:;" class="navbar-item back-page"><i class="back-ico"></i></a>
+            <div class="navbar-center">
+            <span class="navbar-title">
+                <svg class="icon nav-logo" aria-hidden="true">
+                    <use xlink:href="#dicon-logo">
+                </svg>
+            </span>
+            </div>
+            <a href="javascript:;" class="navbar-item cont-sorts sort-hid" data-ydui-actionsheet="{target:'#actionSheet',closeElement:'#cancel'}"><i class="icon-type"></i></a>
+        </header>
+        <div class="g-scrollview">
+            <?=$content?>
+        </div>
+    </section>
 <?php $this->endBody() ?>
 </body>
 </html>
